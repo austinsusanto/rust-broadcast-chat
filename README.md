@@ -8,3 +8,8 @@ In this test, we can see the original server and client program. The server prog
 ## 2.2. Modifying the websocket port
 
 In this tutorial, the port in both sides is edited into 8080. In the client.rs we can edit it from the ClientBuilder and in the server.rs we can edit it from the TcpListener. The program will work like normal and no function will change. The port is only used for connection so that the client and server can interact well.
+
+## 2.3. Small changes. Add some information to client
+
+![Updated broadcast & chat data](assets/2.png)
+In this tutorial, the information given in the chat is added. The IP of the sender is shown. This modification is useful because we can differentiate the client that sends the message. But, this app can still be optimized by showing only the name or the username of the client rather than showing the IP.
